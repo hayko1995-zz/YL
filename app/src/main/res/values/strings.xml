@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">YL Lid</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+
+    <!-- Strings related to login -->
+    <string name="button">Enter</string>
+    <string name="naxaban">Յուրաքանչյուր պատանի պետք է Հիսուս Քրիստոսին հանդիպելու և նրան հետևելու հնարավորություն ունենա։</string>
+</resources>
