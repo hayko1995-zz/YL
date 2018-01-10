@@ -1,9 +1,6 @@
 package scoj.yllid;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -12,9 +9,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    ListView listView;
+    String[] arr;
+    ArrayAdapter<String> adapter;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +27,7 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        listView = (ListView) findViewById(R.id.listView);
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -73,16 +78,21 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
+        if (id == R.id.naxaban) {
+            arr = getResources().getStringArray(R.array.naxaban);
+            set();
+        } else if (id == R.id.Astvats_Ev_Qristos) {
+            arr = getResources().getStringArray(R.array.Astvats_Ev_Qristos);
+            set();
+        } else if (id == R.id.Mer_kyanqy_mexqy) {
+            arr = getResources().getStringArray(R.array.Mer_kyanqy_mexqy);
+            set();
+        } else if (id == R.id.Apashxarutyun) {
+            arr = getResources().getStringArray(R.array.Apashxarutyun);
+            set();
+        } else if (id == R.id.mer_ardzaganqner) {
+            arr = getResources().getStringArray(R.array.mer_ardzaganqner);
+            set();
         } else if (id == R.id.nav_send) {
 
         }
@@ -90,5 +100,12 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    void set() {
+        adapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1, arr);
+        listView.setAdapter(adapter);
+
     }
 }

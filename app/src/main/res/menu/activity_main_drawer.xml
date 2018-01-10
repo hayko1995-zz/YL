@@ -3,19 +3,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
+    <item android:title="Հարցեր փոքր խմբերի համար " />
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:title="Ոչ վերբալ շփում նոր երիտասարդների հետ " />
+            android:id="@+id/naxaban"
+            android:title="Նախաբան" />
         <item
-            android:id="@+id/nav_gallery"
-            android:title="Gallery" />
+            android:id="@+id/Astvats_Ev_Qristos"
+            android:title="Աստված և Քրիստոսի անձը" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:title="Slideshow" />
+            android:id="@+id/Mer_kyanqy_mexqy"
+            android:title="Մեր կարիքը։ Մեղքը" />
         <item
-            android:id="@+id/nav_manage"
-            android:title="Tools" />
+            android:id="@+id/Apashxarutyun"
+            android:title="Ապաշխարություն" />
+        <item
+            android:id="@+id/mer_ardzaganqner"
+            android:title="Մեր արձագանքները" />
     </group>
 
     <item android:title="Communicate">
