@@ -29,6 +29,8 @@ public class MainActivity extends AppCompatActivity
 
         listView = (ListView) findViewById(R.id.listView);
 
+        arr = getResources().getStringArray(R.array.Arajin);
+        set();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -93,9 +95,27 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.mer_ardzaganqner) {
             arr = getResources().getStringArray(R.array.mer_ardzaganqner);
             set();
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.Qristosn_e_Astvats) {
+            arr = getResources().getStringArray(R.array.Qristosn_e_Astvats);
+            set();
+        } else if (id == R.id.Mardu_kariqner_mexq) {
+            arr = getResources().getStringArray(R.array.Mardu_kariqner_mexq);
+            set();
+        } else if (id == R.id.Qristosi_gorcer) {
+            arr = getResources().getStringArray(R.array.Qristosi_gorcer);
+            set();
 
+        } else if (id == R.id.Handznararutyun) {
+            arr = getResources().getStringArray(R.array.Handznararutyun);
+            set();
+        } else if (id == R.id.Axotqner_xostumner) {
+            arr = getResources().getStringArray(R.array.Axotqner_xostumner);
+            set();
+        } else if (id == R.id.Ach) {
+            arr = getResources().getStringArray(R.array.Ach);
+            set();
         }
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -103,6 +123,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     void set() {
+
         adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, arr);
         listView.setAdapter(adapter);

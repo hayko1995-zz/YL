@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
@@ -22,14 +23,32 @@
             android:title="Մեր արձագանքները" />
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="Օգնող համարներ">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:title="Share" />
+                android:id="@+id/Qristosn_e_Astvats"
+
+                android:title="Քրիստոսն է Աստված" />
             <item
-                android:id="@+id/nav_send"
-                android:title="Send" />
+                android:id="@+id/Mardu_kariqner_mexq"
+
+                android:title="Մարդու կարիքները/Մեղք" />
+            <item
+                android:id="@+id/Qristosi_gorcer"
+
+                android:title="Քրիստոսի գործերը" />
+            <item
+                android:id="@+id/Handznararutyun"
+
+                android:title="Հանձնարարություն" />
+            <item
+                android:id="@+id/Axotqner_xostumner"
+
+                android:title="Ազոթքներ խոստումներ" />
+            <item
+                android:id="@+id/Ach"
+
+                android:title="Աճ" />
         </menu>
     </item>
 
